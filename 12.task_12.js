@@ -29,11 +29,20 @@ const products = [
 ];
 
 const totalPrice = (arr) => {
-  let total = 0;
+  /* let total = 0;
   arr.forEach((product) => {
     total += product.quantity * product.price;
   });
-  return total;
+  return total; */
+
+  const priceArr = arr.map((product) => product.price * product.quantity);
+  console.log(priceArr);
+
+  const allProductsPrice = priceArr.reduce(
+    (acc, currentValue) => acc + currentValue,
+    0
+  );
+  return allProductsPrice;
 };
 
 const result = totalPrice(products);
