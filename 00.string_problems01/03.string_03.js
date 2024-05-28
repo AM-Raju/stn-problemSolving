@@ -6,8 +6,6 @@ const sentence =
 const capitalizeFirstWord = (str) => {
   const strArr = str.split(" ");
 
-  console.log(strArr);
-
   const upperCaseArr = strArr.map((word) =>
     word.replace(word[0], word[0].toUpperCase())
   );
