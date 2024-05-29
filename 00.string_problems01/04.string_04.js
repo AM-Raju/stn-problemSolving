@@ -1,4 +1,4 @@
-/* Problem 3: Write a function that takes a string as input and returns the longest word in the string. */
+/* Problem 4: Write a function that takes a string as input and returns the longest word in the string. */
 
 const sentence =
   "Write a function that takes a string as input and returns the longest word in the string.";
